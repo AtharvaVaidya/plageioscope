@@ -8,6 +8,7 @@
 
 import UIKit
 import Darwin
+import SnapKit
 
 class CVAIViewController: UIViewController {
 
@@ -43,6 +44,19 @@ class CVAIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let imageview = UIImageView(frame: CGRectMake(0, 0, leftDiagonal.frame.width * 0.8, leftDiagonal.frame.height * 0.8))
+        imageview.image = UIImage(named: "GUIDELINE 2A")
+        imageview.contentMode = .ScaleAspectFit
+
+        leftDiagonal.addSubview(imageview)
+        
+        imageview.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(leftDiagonal)
+            //make.edges.equalTo(leftDiagonal).inset(UIEdgeInsetsMake(0, 00, 00, 0))
+        }
+        
+        
+        self.view.bringSubviewToFront(leftDiagonal)
         self.imageView.image = self.image
         // Do any additional setup after loading the view.
         

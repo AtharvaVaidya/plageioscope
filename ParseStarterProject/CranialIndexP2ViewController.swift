@@ -38,11 +38,26 @@ class CranialIndexP2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let imageview = UIImageView(frame: CGRectMake(0, 0, horizontal.frame.width * 0.5, horizontal.frame.height * 0.5))
+        imageview.image = UIImage(named: "Guideline 1b")
+        imageview.contentMode = .ScaleAspectFit
+        horizontal.addSubview(imageview)
+        
+        imageview.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(horizontal)
+            
+        }
+        
+        self.view.bringSubviewToFront(horizontal)
+        
         self.imageView.image = self.image
         panRec.addTarget(self, action: "draggedView:")
+        
         horizontal.addGestureRecognizer(panRec)
         horizontal.userInteractionEnabled = true
+        
         pinchRec.addTarget(self, action: "pinchedView:")
+        
         horizontal.addGestureRecognizer(pinchRec)
         horizontal.multipleTouchEnabled = true
         // Do any additional setup after loading the view.

@@ -44,11 +44,29 @@ class CranialIndexViewController: UIViewController {
     let pinchRec = UIPinchGestureRecognizer()
     //    let pinchRec2 = UIPinchGestureRecognizer()
     //    @IBOutlet weak var horizontal: UIView!
+    @IBOutlet weak var continueButton: UIButton!
     
     @IBOutlet weak var vertical: UIView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let imgview = UIImageView(frame: CGRectMake(0, 0, vertical.frame.width, vertical.frame.height))
+        
+        imgview.image = UIImage(named: "Guideline 1a")
+        
+        imgview.contentMode = .ScaleAspectFit
+
+
+        vertical.addSubview(imgview)
+        
+        imgview.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(vertical)
+            make.height.lessThanOrEqualTo(vertical)
+            make.width.lessThanOrEqualTo(vertical)
+        }
+        
+        self.view.bringSubviewToFront(vertical)
         self.imageView.image = self.image
         // Do any additional setup after loading the view.
         
@@ -71,6 +89,17 @@ class CranialIndexViewController: UIViewController {
         //        pinchRec2.addTarget(self, action: "pinchedView2:")
         //        horizontal.addGestureRecognizer(pinchRec2)
         //        horizontal.multipleTouchEnabled = true
+        
+//        imageView.snp_makeConstraints { (make) -> Void in
+//            make.top.equalTo(snp_topLayoutGuideBottom)
+//            make.bottom.equalTo(continueButton.snp_top)
+//        }
+        
+//        continueButton.snp_makeConstraints { (make) -> Void in
+//            make.top.equalTo(67)
+//        }
+        
+        print("Height: \(continueButton.frame.height)")
     }
     
     func pinchedView(sender:UIPinchGestureRecognizer){
@@ -101,10 +130,7 @@ class CranialIndexViewController: UIViewController {
         sender.view!.center = CGPointMake(sender.view!.center.x + translation.x, sender.view!.center.y + translation.y)
         sender.setTranslation(CGPointZero, inView: self.view)
     }
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    
     
     //    var cranialIndex: Double = 0
     //    func calculateCranialIndex() {

@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Eureka.xcscheme</key>
+		<key>Pods-LifenestPlagiocephalyAwarenessTest.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-LifenestPlagiocephalyAwarenessTest.xcscheme</key>
+		<key>SnapKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -19,40 +19,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>XLPagerTabStrip-XLPagerTabStrip.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>XLPagerTabStrip.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>31EF08F3444DCD2B169D92269C5BCD3D</key>
+		<key>6FADBBD3E49E42B10F5BE7F869EE297C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>366BEAC7E94909598BB8BD3D8190CE20</key>
+		<key>95734142277B7AE25BA3A16A5D8EC0C0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>388C20E3615E319E342FD4AC37DDC4F3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>396B5B66AA9EA87BC9A9D24641A12E42</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>537A28B7C49265FF087BF5E108A2F7E5</key>
+		<key>A4010BE54C7E0CBAA44C70FB8DC1B0D5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

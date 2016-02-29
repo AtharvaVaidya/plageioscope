@@ -68,7 +68,7 @@ class TakePictureViewController: UIViewController, UINavigationControllerDelegat
         let overlayImage = UIImage(named: "NewOval");
         let resizedImage = imageManipulator.halfImageSizeBitmap(overlayImage!);
         imagePicker.cameraOverlayView = UIImageView(image: resizedImage);
-        imagePicker.cameraOverlayView?.frame = CGRectMake(self.view.frame.width/2-resizedImage.size.width/2, self.view.frame.height/2-resizedImage.size.height/2-70, resizedImage.size.width, resizedImage.size.height);
+        imagePicker.cameraOverlayView?.frame = CGRectMake(0, 0, resizedImage.size.width * 0.9, resizedImage.size.height * 0.9);
         let bounds = UIScreen.mainScreen().bounds;
         self.presentViewController(imagePicker, animated: true) { () -> Void in
             //TODO: Make imagePicker camera view display on whole screen

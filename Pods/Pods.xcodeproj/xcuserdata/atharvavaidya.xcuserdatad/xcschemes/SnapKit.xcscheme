@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4066075750B3361B071B2AAC'
-               BlueprintName = 'Pods-LifenestPlagiocephalyAwarenessTest'
+               BlueprintIdentifier = '46FD64C9796BDBFF16ECBFFC'
+               BlueprintName = 'SnapKit'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_LifenestPlagiocephalyAwarenessTest.framework'>
+               BuildableName = 'SnapKit.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

@@ -59,7 +59,7 @@ import UIKit
         }
     }
     
-    private let borderThickness: (active: CGFloat, inactive: CGFloat) = (2, 2)
+    private let borderThickness: (active: CGFloat, inactive: CGFloat) = (4, 2)
     private let placeholderInsets = CGPoint(x: 6, y: 6)
     private let textFieldInsets = CGPoint(x: 6, y: 6)
     private let borderLayer = CALayer()
@@ -120,9 +120,9 @@ import UIKit
         var newRect:CGRect
         
         if isFirstResponder() {
-            newRect = CGRect(x: 0, y: bounds.size.height - font!.lineHeight, width: bounds.size.width, height: borderThickness.active)
+            newRect = CGRect(x: 0, y: bounds.size.height - font!.lineHeight + textFieldInsets.y - borderThickness.active, width: bounds.size.width, height: borderThickness.active)
         } else {
-            newRect = CGRect(x: 0, y: bounds.size.height - font!.lineHeight, width: bounds.size.width, height: borderThickness.inactive)
+            newRect = CGRect(x: 0, y: bounds.size.height - font!.lineHeight + textFieldInsets.y - borderThickness.inactive, width: bounds.size.width, height: borderThickness.inactive)
         }
         
         return newRect
@@ -145,21 +145,21 @@ import UIKit
     
     private func performPlacerholderAnimationWithColor(color: UIColor) {
         
-//        let yOffset: CGFloat = 4
-//        
-//        UIView.animateWithDuration(0.15, animations: {
-//            self.placeholderLabel.transform = CGAffineTransformMakeTranslation(0, -yOffset)
-//            self.placeholderLabel.alpha = 0
-//            }) { (completed) in
-//                self.placeholderLabel.transform = CGAffineTransformIdentity
-//                self.placeholderLabel.transform = CGAffineTransformMakeTranslation(0, yOffset)
-//                
-//                UIView.animateWithDuration(0.15, animations: {
-//                    self.placeholderLabel.textColor = color
-//                    self.placeholderLabel.transform = CGAffineTransformIdentity
-//                    self.placeholderLabel.alpha = 1
-//                })
-//        }
+        let yOffset: CGFloat = 4
+        
+        UIView.animateWithDuration(0.15, animations: {
+            self.placeholderLabel.transform = CGAffineTransformMakeTranslation(0, -yOffset)
+            self.placeholderLabel.alpha = 0
+            }) { (completed) in
+                self.placeholderLabel.transform = CGAffineTransformIdentity
+                self.placeholderLabel.transform = CGAffineTransformMakeTranslation(0, yOffset)
+                
+                UIView.animateWithDuration(0.15, animations: {
+                    self.placeholderLabel.textColor = color
+                    self.placeholderLabel.transform = CGAffineTransformIdentity
+                    self.placeholderLabel.alpha = 1
+                })
+        }
     }
     
     // MARK: - Overrides
@@ -174,4 +174,5 @@ import UIKit
         
         return CGRectInset(newBounds, textFieldInsets.x, 0)
     }
+    
 }

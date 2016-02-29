@@ -59,7 +59,6 @@
 		ECA695A51C6D8E410086D222 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA695A41C6D8E410086D222 /* DataProvider.swift */; };
 		ECA695A71C6DB1E50086D222 /* LifenestNavViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA695A61C6DB1E50086D222 /* LifenestNavViewController.swift */; };
 		ECA695AB1C6E334B0086D222 /* CustomNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA695AA1C6E334B0086D222 /* CustomNavigationBar.swift */; };
-		ECA695B11C6E76A80086D222 /* CustomRows.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA695B01C6E76A80086D222 /* CustomRows.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,7 +121,6 @@
 		ECA695A41C6D8E410086D222 /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		ECA695A61C6DB1E50086D222 /* LifenestNavViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LifenestNavViewController.swift; sourceTree = "<group>"; };
 		ECA695AA1C6E334B0086D222 /* CustomNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNavigationBar.swift; sourceTree = "<group>"; };
-		ECA695B01C6E76A80086D222 /* CustomRows.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRows.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,13 +205,11 @@
 				ECA695A01C6D39580086D222 /* PostCell.xib */,
 				ECA695A11C6D39580086D222 /* PostCell.swift */,
 				EC6A588F1C6B178000C95FF9 /* LegalViewController.swift */,
-				ECA695B01C6E76A80086D222 /* CustomRows.swift */,
 				EC6FDA991C69D77800DD300C /* CustomTextField.swift */,
 				8FF3F9CF1BCB53EF005D41AC /* TakePictureViewController.swift */,
 				8F666B9E1BAE0C4000960DC7 /* SignUpViewController.swift */,
 				8FF3F9CD1BC9F6D4005D41AC /* LoginViewController.swift */,
 				8FF3F9D31BCB721C005D41AC /* ImageManipulator.swift */,
-				8FF3F9D71BCBB74D005D41AC /* CranialIndexViewController.swift */,
 				8FF3F9D51BCB8ECA005D41AC /* CameraOverlayView.xib */,
 				8F4B9DCF1BE70E130031A41E /* StartViewController.swift */,
 				8F4B9DD11BE813190031A41E /* contactUsWebsiteViewController.swift */,
@@ -227,6 +223,7 @@
 				8F0C26551BF4070E00B9D224 /* NormocephalyViewController.swift */,
 				8FB9D3791BF40DB0005CB3F9 /* CustomerInformationViewController.swift */,
 				8F0C1A7F1C68F02800EA8CC5 /* InitialDisclaimerViewController.swift */,
+				8FF3F9D71BCBB74D005D41AC /* CranialIndexViewController.swift */,
 				8F0C1A811C6920BB00EA8CC5 /* CranialIndexP2ViewController.swift */,
 			);
 			name = LifenestPlagiocephalyAwarenessTest;
@@ -424,7 +421,6 @@
 				ECA695A51C6D8E410086D222 /* DataProvider.swift in Sources */,
 				8F4B9DD01BE70E130031A41E /* StartViewController.swift in Sources */,
 				ECA695961C6D03E10086D222 /* LifenestViewController.swift in Sources */,
-				ECA695B11C6E76A80086D222 /* CustomRows.swift in Sources */,
 				8FF3F9CE1BC9F6D4005D41AC /* LoginViewController.swift in Sources */,
 				EC9D8F4D1C6FE82F00D6416F /* InstructionsVC.swift in Sources */,
 				8FB9D37A1BF40DB0005CB3F9 /* CustomerInformationViewController.swift in Sources */,

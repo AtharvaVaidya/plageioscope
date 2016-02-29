@@ -40,6 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UITableViewCell.appearance().textLabel?.font = UIFont.preferredFontForTextStyle("UIFontTextStyleTitle1")
         UITableViewCell.appearance().selectionStyle = .None
         
+        UIBarButtonItem.appearance().setTitlePositionAdjustment(UIOffsetMake(0, -60), forBarMetrics: UIBarMetrics.Default)
+        
         let _ = LifenestViewController(nibName: nil, bundle: nil)
         
         // change navigation item title color

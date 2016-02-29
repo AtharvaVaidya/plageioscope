@@ -84,12 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-LifenestPlagiocephalyAwarenessTest/Eureka.framework"
+  install_framework "Pods-LifenestPlagiocephalyAwarenessTest/SnapKit.framework"
   install_framework "Pods-LifenestPlagiocephalyAwarenessTest/TextFieldEffects.framework"
-  install_framework "Pods-LifenestPlagiocephalyAwarenessTest/XLPagerTabStrip.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-LifenestPlagiocephalyAwarenessTest/Eureka.framework"
+  install_framework "Pods-LifenestPlagiocephalyAwarenessTest/SnapKit.framework"
   install_framework "Pods-LifenestPlagiocephalyAwarenessTest/TextFieldEffects.framework"
-  install_framework "Pods-LifenestPlagiocephalyAwarenessTest/XLPagerTabStrip.framework"
 fi

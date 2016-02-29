@@ -50,6 +50,11 @@ class CVAIPart2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let imageview = UIImageView(frame: CGRectMake(0, 0, rightDiagonal.frame.width * 0.8, rightDiagonal.frame.height * 0.8))
+        imageview.image = UIImage(named: "Guideline 2b")
+        imageview.contentMode = .ScaleAspectFit
+        rightDiagonal.addSubview(imageview)
+        self.view.bringSubviewToFront(rightDiagonal)
         self.imageView.image = self.image
         // Do any additional setup after loading the view.
 

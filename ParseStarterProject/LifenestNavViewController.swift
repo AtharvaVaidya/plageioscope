@@ -75,6 +75,7 @@ class LifenestNavigationViewController: UINavigationController
         
         self.navigationItem.titleView = imageView
         
+        self.navigationItem.backBarButtonItem?.title = ""
     }
 }
 

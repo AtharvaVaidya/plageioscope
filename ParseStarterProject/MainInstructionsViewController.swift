@@ -23,17 +23,24 @@ class MainInstructionsViewController: UIViewController {
         c.gl.frame = self.view.frame
         self.view.layer.insertSublayer(c.gl, atIndex: 0)
         self.navigationController?.navigationBarHidden = false
-        
+        let navigationBarHeight = (self.navigationController?.navigationBar.frame.height)!
         let image = UIImage(named: "LifenestLogo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+        let imageSize = CGSizeMake(3 * navigationBarHeight, navigationBarHeight)
+        let marginX = (self.navigationController!.navigationBar.frame.size.width / 2) - (imageSize.width / 2)
+        let imageView = UIImageView(frame: CGRectMake(marginX, 0, imageSize.width, imageSize.height))
         imageView.opaque = true
         imageView.contentMode = .ScaleAspectFit
         imageView.image = image!
         
         print(imageView)
         
-        self.navigationItem.titleView = imageView
+        self.navigationController!.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: UIBarMetrics.Default)
+        self.navigationController!.navigationBar.shadowImage = UIImage()
+        self.navigationController!.navigationBar.translucent = true
+        self.navigationController!.view.backgroundColor = UIColor.clearColor()
         
+        self.navigationController?.navigationBar.addSubview(imageView)
+        print(self.navigationItem.backBarButtonItem?.title)
     }
     
     @IBAction func startTestPressed()

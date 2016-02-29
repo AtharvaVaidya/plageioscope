@@ -5,9 +5,8 @@ use_frameworks!
 
 target 'LifenestPlagiocephalyAwarenessTest' do
 
-pod 'XLPagerTabStrip', '~> 4.0'
-pod 'Eureka', '~> 1.3'
 pod 'TextFieldEffects'
+pod 'SnapKit', '~> 0.15.0'
 
 end
 
