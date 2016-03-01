@@ -51,12 +51,14 @@ class CranialIndexViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(imageView.frame.height)
+        
         let imgview = UIImageView(frame: CGRectMake(0, 0, vertical.frame.width, vertical.frame.height))
         
         imgview.image = UIImage(named: "Guideline 1a")
         
         imgview.contentMode = .ScaleAspectFit
-
+        
 
         vertical.addSubview(imgview)
         
@@ -100,6 +102,37 @@ class CranialIndexViewController: UIViewController {
 //        }
         
         print("Height: \(continueButton.frame.height)")
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        //layoutConstraints()
+    }
+    
+    func layoutConstraints()
+    {
+        
+        let superview = self.view
+        
+        continueButton.snp_makeConstraints { (make) -> Void in
+            
+            make.height.equalTo(67)
+            make.bottom.equalTo(snp_bottomLayoutGuideTop)
+            make.width.equalTo(superview.snp_width)
+            
+        }
+        
+        imageView.snp_makeConstraints { (make) -> Void in
+            
+            make.top.equalTo(snp_topLayoutGuideTop)
+            make.bottom.equalTo(continueButton.snp_top).offset(10)
+            make.width.equalTo(superview.snp_width)
+        }
+        
+        vertical.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(imageView.snp_center)
+            make.edges.equalTo(imageView).inset(UIEdgeInsetsMake(20, 0, 20, 0))
+        }
     }
     
     func pinchedView(sender:UIPinchGestureRecognizer){

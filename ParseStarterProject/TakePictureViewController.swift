@@ -8,6 +8,7 @@
 
 import UIKit
 import Parse
+import SnapKit
 
 class TakePictureViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
@@ -24,8 +25,9 @@ class TakePictureViewController: UIViewController, UINavigationControllerDelegat
         let tgs = UITapGestureRecognizer(target: self, action: "tapPressed")
         vc.view.addGestureRecognizer(tgs)
         self.presentViewController(vc, animated: true, completion: nil)
-        
     }
+    
+    
 
 
     func tapPressed()
@@ -58,7 +60,7 @@ class TakePictureViewController: UIViewController, UINavigationControllerDelegat
         
         imagePicker.delegate = self
         imagePicker.sourceType = .Camera
-         
+        
         imagePicker.allowsEditing = false;
         
         
@@ -73,6 +75,15 @@ class TakePictureViewController: UIViewController, UINavigationControllerDelegat
         self.presentViewController(imagePicker, animated: true) { () -> Void in
             //TODO: Make imagePicker camera view display on whole screen
             self.imagePicker.view.frame = CGRectMake(0, 80, self.imagePicker.view.frame.width, self.imagePicker.view.frame.height);
+            
+            let cameraoverlayview = self.imagePicker.cameraOverlayView
+            let cameraview = self.imagePicker.view
+            
+            cameraoverlayview?.snp_makeConstraints { (make) -> Void in
+                
+                make.centerX.equalTo(cameraview.snp_centerX)
+                make.centerY.equalTo(cameraview.snp_centerY).offset(-80)
+            }
         }
     }
     

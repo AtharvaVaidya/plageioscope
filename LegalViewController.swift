@@ -23,16 +23,6 @@ class LegalViewController: UIViewController
         c.gl.frame = self.view.frame
         self.view.layer.insertSublayer(c.gl, atIndex: 0)
         
-        let image = UIImage(named: "LifenestLogo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        imageView.opaque = true
-        imageView.contentMode = .ScaleAspectFit
-        imageView.image = image!
-        
-        print(imageView)
-        
-        self.navigationItem.titleView = imageView
-        
         let border = CALayer()
         let width = CGFloat(2.0)
         border.borderColor = UIColor(red: CGFloat(72 / 255.0), green: CGFloat(122 / 255.0), blue: CGFloat(135 / 255.0), alpha: 1).CGColor
@@ -43,6 +33,12 @@ class LegalViewController: UIViewController
         lineView.layer.cornerRadius = 0.0
         lineView.layer.masksToBounds = true
         lineView.backgroundColor = UIColor.orangeColor()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBarHidden = false
     }
     
     

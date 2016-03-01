@@ -54,6 +54,10 @@ class CVAIPart2ViewController: UIViewController {
         imageview.image = UIImage(named: "Guideline 2b")
         imageview.contentMode = .ScaleAspectFit
         rightDiagonal.addSubview(imageview)
+        
+        imageview.snp_makeConstraints { (make) -> Void in
+            make.center.equalTo(rightDiagonal)
+        }
         self.view.bringSubviewToFront(rightDiagonal)
         self.imageView.image = self.image
         // Do any additional setup after loading the view.

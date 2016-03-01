@@ -20,15 +20,15 @@ class CustomVC: UIViewController
         super.viewDidLoad()
         
         self.navigationController?.navigationBarHidden = false
-        let image = UIImage(named: "LifenestLogo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        imageView.opaque = true
-        imageView.contentMode = .ScaleAspectFit
-        imageView.image = image!
-        
-        print(imageView)
-        
-        self.navigationItem.titleView = imageView
+//        let image = UIImage(named: "LifenestLogo")
+//        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
+//        imageView.opaque = true
+//        imageView.contentMode = .ScaleAspectFit
+//        imageView.image = image!
+//        
+//        print(imageView)
+//        
+//        self.navigationItem.titleView = imageView
         
         let buttons = [b1, b2, b3, b4]
         
@@ -39,6 +39,8 @@ class CustomVC: UIViewController
     }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.navigationController?.navigationBarHidden = false
         
         let c = Colors()
         c.gl.frame = self.view.frame

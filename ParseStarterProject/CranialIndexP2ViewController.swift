@@ -43,9 +43,15 @@ class CranialIndexP2ViewController: UIViewController {
         imageview.contentMode = .ScaleAspectFit
         horizontal.addSubview(imageview)
         
+        let imagePicker = UIImagePickerController()
+        
+        let h = imagePicker.view.frame.height
+        
+        imageview.frame.size.height = h
+        
         imageview.snp_makeConstraints { (make) -> Void in
             make.center.equalTo(horizontal)
-            
+        
         }
         
         self.view.bringSubviewToFront(horizontal)

@@ -19,14 +19,12 @@ class ContactUsViewController: UIViewController
         self.view.layer.insertSublayer(c.gl, atIndex: 0)
         
         self.navigationController?.navigationBarHidden = false
-        let image = UIImage(named: "LifenestLogo")
-        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 30, height: 30))
-        imageView.opaque = true
-        imageView.contentMode = .ScaleAspectFit
-        imageView.image = image!
         
-        print(imageView)
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.navigationItem.titleView = imageView
+        self.navigationController?.navigationBarHidden = false
     }
 }
