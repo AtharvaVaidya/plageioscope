@@ -1067,35 +1067,38 @@ Telephone: 310-556-0624</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqT-Ix-lDr">
-                                <rect key="frame" x="24" y="553" width="328" height="30"/>
+                                <rect key="frame" x="0.0" y="543" width="375" height="60"/>
+                                <color key="backgroundColor" red="0.95686274510000002" green="0.58823529409999997" blue="0.25490196079999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="weV-Rq-nWC"/>
+                                    <constraint firstAttribute="height" constant="60" id="Nry-df-0tB"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="I understand. Continue to test result"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="I understand. Continue to test result">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
                                     <action selector="continue:" destination="pkM-up-wac" eventType="touchUpInside" id="zkI-Nn-Sxb"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="25" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n04-KW-nuf">
-                                <rect key="frame" x="20" y="69" width="335" height="529"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <rect key="frame" x="20" y="15" width="335" height="520"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" red="0.26274509800000001" green="0.45098039220000002" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="oqT-Ix-lDr" firstAttribute="centerX" secondItem="ckc-7d-7Js" secondAttribute="centerX" id="067-2L-FX2"/>
-                            <constraint firstItem="oqT-Ix-lDr" firstAttribute="top" secondItem="n04-KW-nuf" secondAttribute="bottom" constant="16" id="78u-MQ-HYi"/>
-                            <constraint firstItem="n04-KW-nuf" firstAttribute="top" secondItem="FMm-NU-l22" secondAttribute="bottom" constant="8" symbolic="YES" id="BaG-Is-OxO"/>
+                            <constraint firstItem="n04-KW-nuf" firstAttribute="leading" secondItem="ckc-7d-7Js" secondAttribute="leadingMargin" id="7eg-jO-Xul"/>
                             <constraint firstItem="d78-lA-KRO" firstAttribute="top" secondItem="oqT-Ix-lDr" secondAttribute="bottom" constant="162" id="Gvp-Gm-dWm"/>
-                            <constraint firstItem="oqT-Ix-lDr" firstAttribute="centerX" secondItem="n04-KW-nuf" secondAttribute="centerX" id="NVa-Qg-gzH"/>
-                            <constraint firstItem="n04-KW-nuf" firstAttribute="centerX" secondItem="ckc-7d-7Js" secondAttribute="centerX" id="Qmp-uT-9BG"/>
-                            <constraint firstAttribute="bottom" secondItem="oqT-Ix-lDr" secondAttribute="bottom" constant="20" symbolic="YES" id="TtN-x3-JAM"/>
-                            <constraint firstItem="n04-KW-nuf" firstAttribute="leading" secondItem="ckc-7d-7Js" secondAttribute="leadingMargin" constant="4" id="biF-wH-Mzg"/>
+                            <constraint firstItem="oqT-Ix-lDr" firstAttribute="bottom" secondItem="d78-lA-KRO" secondAttribute="top" id="Hzo-kk-iNo"/>
+                            <constraint firstAttribute="trailing" secondItem="oqT-Ix-lDr" secondAttribute="trailing" id="Lb5-GS-xeh"/>
+                            <constraint firstItem="n04-KW-nuf" firstAttribute="top" secondItem="FMm-NU-l22" secondAttribute="bottom" constant="15" id="cJQ-Ap-SZw"/>
+                            <constraint firstItem="oqT-Ix-lDr" firstAttribute="leading" secondItem="ckc-7d-7Js" secondAttribute="leading" id="iX1-Dj-erL"/>
                             <constraint firstItem="oqT-Ix-lDr" firstAttribute="leading" secondItem="ckc-7d-7Js" secondAttribute="leadingMargin" constant="7" id="oVL-rY-3tS"/>
-                            <constraint firstItem="oqT-Ix-lDr" firstAttribute="leading" secondItem="ckc-7d-7Js" secondAttribute="leadingMargin" constant="8" id="yaP-PD-5tT"/>
+                            <constraint firstItem="n04-KW-nuf" firstAttribute="centerX" secondItem="oqT-Ix-lDr" secondAttribute="centerX" id="ssk-02-jrK"/>
+                            <constraint firstItem="oqT-Ix-lDr" firstAttribute="top" secondItem="n04-KW-nuf" secondAttribute="bottom" constant="8" symbolic="YES" id="xX6-J3-wJ5"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -1160,11 +1163,11 @@ Telephone: 310-556-0624</string>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Results" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uXp-3T-vng">
-                                <rect key="frame" x="20" y="8" width="335" height="35"/>
+                                <rect key="frame" x="20" y="8" width="335" height="70"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="1sr-oW-HVS"/>
+                                    <constraint firstAttribute="height" constant="70" id="1sr-oW-HVS"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                 <color key="textColor" red="0.28235294119999998" green="0.47843137250000001" blue="0.52941176469999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1182,7 +1185,7 @@ Telephone: 310-556-0624</string>
                             <constraint firstItem="zre-jx-G1U" firstAttribute="centerX" secondItem="Ona-Mf-kT4" secondAttribute="centerX" id="RPi-mX-N1U"/>
                             <constraint firstItem="uXp-3T-vng" firstAttribute="leading" secondItem="g1W-bS-578" secondAttribute="leadingMargin" id="TK2-NB-xB8"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Ona-Mf-kT4" secondAttribute="bottom" constant="-44" id="UpF-dp-BBl"/>
-                            <constraint firstItem="dcO-gb-oUm" firstAttribute="top" secondItem="uXp-3T-vng" secondAttribute="bottom" constant="73" id="WTy-By-ao5"/>
+                            <constraint firstItem="dcO-gb-oUm" firstAttribute="top" secondItem="uXp-3T-vng" secondAttribute="bottom" constant="38" id="WTy-By-ao5"/>
                             <constraint firstItem="Ona-Mf-kT4" firstAttribute="leading" secondItem="g1W-bS-578" secondAttribute="leadingMargin" constant="82" id="YmL-Rv-iD0"/>
                             <constraint firstItem="dcO-gb-oUm" firstAttribute="trailing" secondItem="uXp-3T-vng" secondAttribute="trailing" id="aFe-fS-3o3"/>
                             <constraint firstItem="dcO-gb-oUm" firstAttribute="leading" secondItem="uXp-3T-vng" secondAttribute="leading" id="dNn-QK-VdR"/>

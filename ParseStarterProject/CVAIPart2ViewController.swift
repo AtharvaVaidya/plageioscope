@@ -50,6 +50,7 @@ class CVAIPart2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         let imageview = UIImageView(frame: CGRectMake(0, 0, rightDiagonal.frame.width * 0.8, rightDiagonal.frame.height * 0.8))
         imageview.image = UIImage(named: "Guideline 2b")
         imageview.contentMode = .ScaleAspectFit

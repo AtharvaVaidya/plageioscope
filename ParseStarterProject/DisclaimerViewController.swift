@@ -122,11 +122,16 @@ class DisclaimerViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         super.viewDidLoad()
         print("disc CVAI \(self.CVAI)")
         print("disc CranialIndex \(self.CranialIndex)")
         self.disclaimerLabel.text = "Accuracy may vary.\nThe accuraccy of Plagioscope App depends of several factors:\n-The way the picture was taken.\n-The positioning of the measurement template.\nHairs may modify the result. For more accurate measurements, Pediatricians use a caliper.\nDuring the first five months of life, the skull is very malleable and the head shape may change quickly. Plagioscope App results may vary over time.\n\nAny results must be confirmed by a health care professional using a calibrated medical device."
         // Do any additional setup after loading the view.
+        
+        let c = Colors()
+        c.gl.frame = self.view.frame
+        self.view.layer.insertSublayer(c.gl, atIndex: 0)
     }
 
     override func didReceiveMemoryWarning() {

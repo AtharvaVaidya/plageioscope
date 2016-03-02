@@ -38,6 +38,7 @@ class CranialIndexP2ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         let imageview = UIImageView(frame: CGRectMake(0, 0, horizontal.frame.width * 0.5, horizontal.frame.height * 0.5))
         imageview.image = UIImage(named: "Guideline 1b")
         imageview.contentMode = .ScaleAspectFit

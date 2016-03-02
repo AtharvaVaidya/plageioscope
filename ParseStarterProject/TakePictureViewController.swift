@@ -96,6 +96,7 @@ class TakePictureViewController: UIViewController, UINavigationControllerDelegat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         let c = Colors()
         c.gl.frame = self.view.frame
         self.view.layer.insertSublayer(c.gl, atIndex: 0)
