@@ -15,6 +15,5 @@ class CustomNavbar: UINavigationBar
         super.init(coder: aDecoder)
         
         self.barTintColor = backgroundColor
-        
     }
 }

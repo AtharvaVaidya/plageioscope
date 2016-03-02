@@ -83,6 +83,7 @@ class TakePictureViewController: UIViewController, UINavigationControllerDelegat
                 
                 make.centerX.equalTo(cameraview.snp_centerX)
                 make.centerY.equalTo(cameraview.snp_centerY).offset(-80)
+                make.edges.equalTo(cameraoverlayview!).dividedBy(0.8)
             }
         }
     }

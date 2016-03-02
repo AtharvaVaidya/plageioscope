@@ -90,7 +90,7 @@ class LifenestViewController: UIViewController
         textView.backgroundColor = UIColor.clearColor()
         textView.layer.backgroundColor = UIColor.clearColor().CGColor
         
-        
+        self.navigationItem.backBarButtonItem?.title = ""
     }
     
     override func viewWillAppear(animated: Bool) {

@@ -48,6 +48,8 @@ class InitialViewController: UIViewController {
         self.navigationController!.view.backgroundColor = UIColor.clearColor()
         
         self.navigationController?.navigationBar.addSubview(imageView)
+        
+        self.navigationItem.backBarButtonItem?.title = ""
     }
     
     override func viewWillAppear(animated: Bool) {

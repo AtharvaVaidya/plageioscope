@@ -67,6 +67,8 @@ class NormocephalyViewController: UIViewController {
         let c = Colors()
         c.gl.frame = self.view.frame
         self.view.layer.insertSublayer(c.gl, atIndex: 0)
+        
+        symptomDetails.backgroundColor = UIColor.clearColor()
     }
 
     override func didReceiveMemoryWarning() {
