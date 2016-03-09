@@ -11,6 +11,10 @@ import Parse
 
 class NormocephalyViewController: UIViewController {
 
+    @IBAction func testAgainButtonPressed(sender: UIButton)
+    {
+        self.navigationController?.popToRootViewControllerAnimated(true)
+    }
     
     @IBOutlet weak var symptomDetails: UITextView!
     
