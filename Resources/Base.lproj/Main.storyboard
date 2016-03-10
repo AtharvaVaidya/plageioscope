@@ -1544,6 +1544,7 @@ Telephone: 310-556-0624
                                 <constraints>
                                     <constraint firstAttribute="height" constant="71" id="9dv-eg-avq"/>
                                     <constraint firstAttribute="height" constant="71" id="Jlg-oE-CA5"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="71" id="yMu-ki-qZU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Sign Up">
@@ -1566,15 +1567,15 @@ Telephone: 310-556-0624
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="SKK-sW-4ie">
-                                <rect key="frame" x="20" y="204" width="560" height="2"/>
+                                <rect key="frame" x="20" y="192" width="560" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="JIa-CF-NW8">
-                                <rect key="frame" x="20" y="314" width="560" height="2"/>
+                                <rect key="frame" x="20" y="299" width="560" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" verticalHuggingPriority="750" horizontalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="2KT-aL-0pd">
-                                <rect key="frame" x="20" y="424" width="560" height="2"/>
+                                <rect key="frame" x="20" y="405" width="560" height="2"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0bh-jM-xAd">
@@ -1612,10 +1613,10 @@ Telephone: 310-556-0624
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5lE-Us-xKn">
-                                <rect key="frame" x="20" y="149" width="560" height="52"/>
+                                <rect key="frame" x="20" y="149" width="560" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="Tjw-IQ-q0g"/>
+                                    <constraint firstAttribute="height" constant="35" id="Tjw-IQ-q0g"/>
                                 </constraints>
                                 <color key="textColor" red="0.26274509800000001" green="0.45098039220000002" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -1630,10 +1631,10 @@ Telephone: 310-556-0624
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qIc-tV-otg">
-                                <rect key="frame" x="20" y="260" width="560" height="52"/>
+                                <rect key="frame" x="20" y="260" width="560" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="dLo-8Q-l0o"/>
+                                    <constraint firstAttribute="height" constant="35" id="dLo-8Q-l0o"/>
                                 </constraints>
                                 <color key="textColor" red="0.26274509800000001" green="0.45098039220000002" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -1648,10 +1649,10 @@ Telephone: 310-556-0624
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F64-jr-q4X">
-                                <rect key="frame" x="20" y="370" width="560" height="52"/>
+                                <rect key="frame" x="20" y="370" width="560" height="35"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="52" id="7PP-7f-n51"/>
+                                    <constraint firstAttribute="height" constant="35" id="7PP-7f-n51"/>
                                 </constraints>
                                 <color key="textColor" red="0.26274509800000001" green="0.45098039220000002" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -1664,13 +1665,17 @@ Telephone: 310-556-0624
                                         <color key="value" red="0.26274509800000001" green="0.45098039220000002" blue="0.4941176471" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="textFieldEditingDidBegin:" destination="keB-Nd-tWF" eventType="editingDidBegin" id="tdZ-yo-9V4"/>
+                                    <action selector="textFieldEditingDidEnd:" destination="keB-Nd-tWF" eventType="editingDidEnd" id="bAA-qe-6SB"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.67843137249999996" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="5lE-Us-xKn" firstAttribute="top" secondItem="O9y-yd-nMh" secondAttribute="bottom" constant="8" symbolic="YES" id="3Gt-fk-T28"/>
                             <constraint firstItem="F64-jr-q4X" firstAttribute="leading" secondItem="2KT-aL-0pd" secondAttribute="leading" id="3T4-Le-Syy"/>
-                            <constraint firstItem="2KT-aL-0pd" firstAttribute="top" secondItem="F64-jr-q4X" secondAttribute="bottom" constant="2" id="4wt-4k-nwn"/>
+                            <constraint firstItem="2KT-aL-0pd" firstAttribute="top" secondItem="F64-jr-q4X" secondAttribute="bottom" id="4wt-4k-nwn"/>
                             <constraint firstItem="gjM-Q1-KMl" firstAttribute="leading" secondItem="qIc-tV-otg" secondAttribute="leading" id="5fe-UC-gdN"/>
                             <constraint firstItem="oaT-83-GIY" firstAttribute="centerX" secondItem="O9y-yd-nMh" secondAttribute="centerX" id="8OL-em-Z9d"/>
                             <constraint firstItem="O9y-yd-nMh" firstAttribute="top" secondItem="9IU-tu-nFo" secondAttribute="bottom" constant="106" id="8Zp-4E-ksP"/>
@@ -1685,7 +1690,7 @@ Telephone: 310-556-0624
                             <constraint firstItem="SKK-sW-4ie" firstAttribute="leading" secondItem="5lE-Us-xKn" secondAttribute="leading" id="FJx-MJ-BoG"/>
                             <constraint firstAttribute="trailingMargin" secondItem="u6R-mr-RKX" secondAttribute="trailing" constant="-20" id="Ftz-pF-VWW"/>
                             <constraint firstItem="gjM-Q1-KMl" firstAttribute="top" secondItem="jrv-vF-nul" secondAttribute="top" constant="214" id="Hph-b0-uK4"/>
-                            <constraint firstItem="2KT-aL-0pd" firstAttribute="top" secondItem="jrv-vF-nul" secondAttribute="top" constant="424" id="MdG-aI-vtA"/>
+                            <constraint firstItem="2KT-aL-0pd" firstAttribute="top" secondItem="jrv-vF-nul" secondAttribute="top" constant="405" id="MdG-aI-vtA"/>
                             <constraint firstItem="JIa-CF-NW8" firstAttribute="leading" secondItem="qIc-tV-otg" secondAttribute="leading" id="NP6-Hg-y9c"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="top" secondItem="vxZ-F2-4IB" secondAttribute="bottom" constant="8" symbolic="YES" id="Nam-G1-MHz"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="top" secondItem="Vhy-e1-aSD" secondAttribute="bottom" constant="56" id="PVD-x3-rLg"/>
@@ -1699,12 +1704,12 @@ Telephone: 310-556-0624
                             <constraint firstItem="O9y-yd-nMh" firstAttribute="leading" secondItem="5lE-Us-xKn" secondAttribute="leading" id="Xw6-3A-TTG"/>
                             <constraint firstItem="vxZ-F2-4IB" firstAttribute="centerX" secondItem="u6R-mr-RKX" secondAttribute="centerX" id="XxB-gL-hqs"/>
                             <constraint firstItem="5lE-Us-xKn" firstAttribute="trailing" secondItem="SKK-sW-4ie" secondAttribute="trailing" id="YPK-Ce-pgu"/>
-                            <constraint firstItem="0bh-jM-xAd" firstAttribute="top" secondItem="2KT-aL-0pd" secondAttribute="bottom" constant="4" id="Yoz-iS-SN5"/>
+                            <constraint firstItem="0bh-jM-xAd" firstAttribute="top" secondItem="2KT-aL-0pd" secondAttribute="bottom" constant="23" id="Yoz-iS-SN5"/>
                             <constraint firstItem="vxZ-F2-4IB" firstAttribute="top" secondItem="Vhy-e1-aSD" secondAttribute="bottom" constant="8" symbolic="YES" id="Z72-Lj-Bgy"/>
-                            <constraint firstItem="0bh-jM-xAd" firstAttribute="top" secondItem="F64-jr-q4X" secondAttribute="bottom" constant="8" symbolic="YES" id="ZHq-Ih-AAl"/>
+                            <constraint firstItem="0bh-jM-xAd" firstAttribute="top" secondItem="F64-jr-q4X" secondAttribute="bottom" constant="25" id="ZHq-Ih-AAl"/>
                             <constraint firstItem="0bh-jM-xAd" firstAttribute="leading" secondItem="2KT-aL-0pd" secondAttribute="leading" id="a1Z-WC-rJ5"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="top" secondItem="vxZ-F2-4IB" secondAttribute="bottom" constant="8" symbolic="YES" id="bng-fC-UWY"/>
-                            <constraint firstItem="JIa-CF-NW8" firstAttribute="top" secondItem="qIc-tV-otg" secondAttribute="bottom" constant="2" id="cI5-us-mLG"/>
+                            <constraint firstItem="JIa-CF-NW8" firstAttribute="top" secondItem="qIc-tV-otg" secondAttribute="bottom" constant="4" id="cI5-us-mLG"/>
                             <constraint firstItem="gjM-Q1-KMl" firstAttribute="leading" secondItem="jrv-vF-nul" secondAttribute="leadingMargin" id="cSG-mx-iFf"/>
                             <constraint firstItem="qIc-tV-otg" firstAttribute="trailing" secondItem="JIa-CF-NW8" secondAttribute="trailing" id="cmu-TH-JGA"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="top" secondItem="vxZ-F2-4IB" secondAttribute="bottom" constant="19" id="emG-B6-EDL"/>
@@ -1713,11 +1718,11 @@ Telephone: 310-556-0624
                             <constraint firstItem="3h8-NH-jA1" firstAttribute="top" secondItem="9IU-tu-nFo" secondAttribute="bottom" constant="308" id="jNa-zj-W5d"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="bottom" secondItem="bzg-xg-KbU" secondAttribute="top" id="kRc-GI-oQh"/>
                             <constraint firstItem="oaT-83-GIY" firstAttribute="top" secondItem="9IU-tu-nFo" secondAttribute="bottom" id="mZi-U9-jKK"/>
-                            <constraint firstItem="SKK-sW-4ie" firstAttribute="top" secondItem="5lE-Us-xKn" secondAttribute="bottom" constant="3" id="ncl-Ff-lOE"/>
+                            <constraint firstItem="SKK-sW-4ie" firstAttribute="top" secondItem="5lE-Us-xKn" secondAttribute="bottom" constant="8" id="ncl-Ff-lOE"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="top" secondItem="9IU-tu-nFo" secondAttribute="bottom" constant="8" symbolic="YES" id="qb8-ij-ks1"/>
                             <constraint firstItem="qIc-tV-otg" firstAttribute="trailing" secondItem="gjM-Q1-KMl" secondAttribute="trailing" id="qqf-Jn-JcT"/>
-                            <constraint firstItem="3h8-NH-jA1" firstAttribute="top" secondItem="JIa-CF-NW8" secondAttribute="bottom" constant="8" symbolic="YES" id="w09-YN-ety"/>
-                            <constraint firstItem="gjM-Q1-KMl" firstAttribute="top" secondItem="SKK-sW-4ie" secondAttribute="bottom" constant="8" symbolic="YES" id="wcC-wy-duL"/>
+                            <constraint firstItem="3h8-NH-jA1" firstAttribute="top" secondItem="JIa-CF-NW8" secondAttribute="bottom" constant="23" id="w09-YN-ety"/>
+                            <constraint firstItem="gjM-Q1-KMl" firstAttribute="top" secondItem="SKK-sW-4ie" secondAttribute="bottom" constant="20" id="wcC-wy-duL"/>
                             <constraint firstItem="qIc-tV-otg" firstAttribute="top" secondItem="gjM-Q1-KMl" secondAttribute="bottom" constant="8" symbolic="YES" id="whO-q2-aBS"/>
                             <constraint firstItem="Vhy-e1-aSD" firstAttribute="trailing" secondItem="vxZ-F2-4IB" secondAttribute="trailing" id="wpM-jx-AoR"/>
                             <constraint firstItem="u6R-mr-RKX" firstAttribute="trailing" secondItem="0bh-jM-xAd" secondAttribute="trailing" id="ycH-fs-iSZ"/>
@@ -1738,6 +1743,7 @@ Telephone: 310-556-0624
                     </view>
                     <connections>
                         <outlet property="confirmEmailTextField" destination="qIc-tV-otg" id="BUq-N8-cPN"/>
+                        <outlet property="lifenestLogo" destination="oaT-83-GIY" id="c7h-UP-LIG"/>
                         <outlet property="lineView1" destination="2KT-aL-0pd" id="kNQ-bN-mdx"/>
                         <outlet property="lineView2" destination="JIa-CF-NW8" id="6cD-rt-BaO"/>
                         <outlet property="lineView3" destination="SKK-sW-4ie" id="mVH-8n-GEG"/>
@@ -2227,8 +2233,8 @@ Telephone: 310-556-0624
         <image name="auricular6" width="111" height="111"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dPv-GO-9KO"/>
+        <segue reference="XrV-PN-gC7"/>
+        <segue reference="hIL-lS-cDS"/>
         <segue reference="76C-Yd-R4g"/>
-        <segue reference="Qlc-HF-G7c"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -10,7 +10,9 @@ import UIKit
 import Parse
 import Bolts
 
-class SignUpViewController: UIViewController {
+class SignUpViewController: UncoveredContentViewController
+{
+    @IBOutlet weak var lifenestLogo: UIImageView!
 
     @IBOutlet weak var usernameTextField: UITextField!
     
@@ -58,7 +60,7 @@ class SignUpViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         //Looks for single or multiple taps.
-        var tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "DismissKeyboard")
         view.addGestureRecognizer(tap)
         
 //        let c = Colors()
@@ -82,6 +84,8 @@ class SignUpViewController: UIViewController {
             lineView.layer.masksToBounds = true
             lineView.backgroundColor = textColor
         }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -95,14 +99,16 @@ class SignUpViewController: UIViewController {
         view.endEditing(true)
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func textFieldEditingDidBegin(sender: UITextField)
+    {
+        self.activeField = sender
+        lifenestLogo.hidden = true
     }
-    */
+    
+    override func textFieldEditingDidEnd(sender: UITextField)
+    {
+        self.activeField = nil
+        lifenestLogo.hidden = false
+    }
 
 }

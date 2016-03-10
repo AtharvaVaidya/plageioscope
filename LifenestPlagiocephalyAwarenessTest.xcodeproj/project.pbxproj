@@ -36,6 +36,7 @@
 		8FF3F9D41BCB721C005D41AC /* ImageManipulator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3F9D31BCB721C005D41AC /* ImageManipulator.swift */; };
 		8FF3F9D61BCB8ECA005D41AC /* CameraOverlayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8FF3F9D51BCB8ECA005D41AC /* CameraOverlayView.xib */; };
 		8FF3F9D81BCBB74D005D41AC /* CranialIndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FF3F9D71BCBB74D005D41AC /* CranialIndexViewController.swift */; };
+		EC60FA4C1C9123F800810FAD /* UncoveredContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC60FA4B1C9123F800810FAD /* UncoveredContentViewController.swift */; };
 		EC6A58901C6B178000C95FF9 /* LegalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6A588F1C6B178000C95FF9 /* LegalViewController.swift */; };
 		EC6FDA9A1C69D77800DD300C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6FDA991C69D77800DD300C /* CustomTextField.swift */; };
 		EC9D8F321C6EAFCE00D6416F /* CustomVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9D8F311C6EAFCE00D6416F /* CustomVC.swift */; };
@@ -98,6 +99,7 @@
 		8FF3F9D31BCB721C005D41AC /* ImageManipulator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManipulator.swift; sourceTree = "<group>"; };
 		8FF3F9D51BCB8ECA005D41AC /* CameraOverlayView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraOverlayView.xib; sourceTree = "<group>"; };
 		8FF3F9D71BCBB74D005D41AC /* CranialIndexViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CranialIndexViewController.swift; sourceTree = "<group>"; };
+		EC60FA4B1C9123F800810FAD /* UncoveredContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UncoveredContentViewController.swift; sourceTree = "<group>"; };
 		EC6A588F1C6B178000C95FF9 /* LegalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LegalViewController.swift; path = ../LegalViewController.swift; sourceTree = "<group>"; };
 		EC6FDA991C69D77800DD300C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		EC9D8F311C6EAFCE00D6416F /* CustomVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomVC.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				EC9D8F511C70350300D6416F /* Guideline 2b.png */,
 				ECA6959A1C6D17470086D222 /* LifenestIconCell.xib */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
+				EC60FA4B1C9123F800810FAD /* UncoveredContentViewController.swift */,
 				EC9D8F311C6EAFCE00D6416F /* CustomVC.swift */,
 				ECA695951C6D03E10086D222 /* LifenestViewController.swift */,
 				ECA695AA1C6E334B0086D222 /* CustomNavigationBar.swift */,
@@ -424,6 +427,7 @@
 				EC9D8F4D1C6FE82F00D6416F /* InstructionsVC.swift in Sources */,
 				8FB9D37A1BF40DB0005CB3F9 /* CustomerInformationViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
+				EC60FA4C1C9123F800810FAD /* UncoveredContentViewController.swift in Sources */,
 				ECA695AB1C6E334B0086D222 /* CustomNavigationBar.swift in Sources */,
 				8F0C26541BF3FE1F00B9D224 /* DisclaimerViewController.swift in Sources */,
 				ECA695A31C6D39580086D222 /* PostCell.swift in Sources */,
