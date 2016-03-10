@@ -16,7 +16,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBOutlet weak var lineView2: UIView!
     
+    @IBOutlet weak var lineView1: UIView!
     @IBOutlet weak var username: UITextField!
     
     @IBOutlet weak var password: UITextField!
@@ -31,6 +33,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         username.delegate = self
         password.delegate = self
+        
+        let lineViews = [lineView1, lineView2]
+        
+        for lineView in lineViews
+        {
+            let border = CALayer()
+            let width = CGFloat(2.0)
+            border.borderColor = textColor.CGColor
+            border.frame = CGRect(x: 0, y: lineView.frame.width * 0.15, width: lineView.frame.size.width * 0.7, height: lineView.frame.size.height)
+            border.borderWidth = width
+            lineView.layer.addSublayer(border)
+            
+            lineView.layer.cornerRadius = 0.0
+            lineView.layer.masksToBounds = true
+            lineView.backgroundColor = textColor
+        }
     }
     
     @IBAction func login(sender: AnyObject) {
